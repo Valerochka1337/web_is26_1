@@ -13,12 +13,13 @@ import {
 import bridge, { UserInfo } from '@vkontakte/vk-bridge';
 
 const getStory = () => {
-  fetch("https://api.thecatapi.com/v1/images/search")
+  fetch("https://dog.ceo/api/breeds/image/random")
   .then(response => response.json())
   .then(cat_images => 
     bridge.send('VKWebAppShowStoryBox', {
       background_type: 'image',
-      url : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fyemek.com%2Ftarif%2Fiki-renkli-kek%2F&psig=AOvVaw3mZpxvbZalkyW67zr9G_KU&ust=1726723126401000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNijl4bfy4gDFQAAAAAdAAAAABAE'
+      url : cat_images.message,
+      
     }).then((data) => {
         if (data.result) {
           // Редактор историй открыт
