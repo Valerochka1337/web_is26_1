@@ -1,0 +1,176 @@
+/* General */
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    background: #433878;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    margin-right: auto
+}
+nav ul {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 60px;
+    padding: 10px 30px 30px 30px;
+    border-radius: 2em;
+    background-color: rgba(126, 96, 191, 0.26);
+}
+
+.section_title {
+    text-align: center;
+    font-size: 3em;
+}
+
+h1, h3 {
+    color: #333;
+}
+.my_face {
+    width: 180px;
+}
+.quote_text {
+    font-size: 5em;
+    margin-outside: 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.quote_text.quote_text_1 {
+    font-style: italic;
+    text-align: center;
+}
+
+.quote_text.quote_text_2 {
+    font-style: italic;
+    text-align: center;
+}
+
+.about_text {
+    font-size: 1.5em;
+}
+
+/* Project */
+.project_line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.project {
+    flex: 1;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.project_img {
+    width: 100%;
+    height: auto;
+}
+
+.project_description {
+    padding: 10px;
+}
+
+.project_title {
+    font-size: 1.2em;
+    margin: 0;
+    color: #0056b3;
+}
+
+.project_list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Code */
+.code {
+    background: #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.ascii_graphic_ill_be_back {
+    font-family: "Courier New", monospace;
+    white-space: pre;
+    background: #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Footer */
+footer {
+    background: #433878;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contacts_title {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.contacts_list {
+    max-width: 600px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+
+.contacts_list li {
+    flex: 1;
+}
+
+.contacts_list a {
+    color: white;
+    text-decoration: none;
+}
+
+.contacts_list a:hover {
+    text-decoration: underline;
+}
