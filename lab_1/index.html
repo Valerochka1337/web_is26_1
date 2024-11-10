@@ -8,112 +8,73 @@
     <title>Resume</title>
 </head>
 <body>
-    <header>
-        <img src="img/logo.jpg" id="logo" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="#section_about">About</a></li>
-                <li><a href="#section_projects">Projects</a></li>
-                <li><a href="#section_code">My code</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <img src="img/logo.jpg" id="logo" alt="logo">
+    <nav>
+        <ul>
+            <li><a href="#section_about">About</a></li>
+            <li><a href="#section_projects">Projects</a></li>
+            <li><a href="#section_code">My code</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <section class="section section_quote">
-            <h1 class="quote_text quote_text_1">Be loyal to the one</h1>
-            <h1 class="quote_text quote_text_2">who is loyal to you</h1>
-            <img class="my_face" src="/img/my_face.png" alt="My face">
-        </section>
+<main>
+    <section class="section section_quote">
+        <h1 class="quote_text quote_text_1">Be loyal to the one</h1>
+        <h1 class="quote_text quote_text_2">who is loyal to you</h1>
+        <img class="my_face" src="/img/my_face.png" alt="My face">
+    </section>
 
-        <section id="section_about" class="section section_about">
-            <h3 class="section_title section_title_about">About</h3>
-            <p class="about_text">Hey! I'm Valerii Yartsev, and I'm a junior backend developer. I specialize in backend development with Java. If you are interested in working with me, feel free to contact me!</p>
-        </section>
+    <section id="section_about" class="section section_about">
+        <h3 class="section_title section_title_about">About</h3>
+        <p class="about_text">Hey! I'm Valerii Yartsev, and I'm a junior backend developer. I specialize in backend
+            development with Java. If you are interested in working with me, feel free to contact me!</p>
+    </section>
 
-        <section id="section_projects" class="section section_projects">
-            <h3 class="section_title section_title_projects">Projects</h3>
-            <div class="project_line">
-                <div class="project">
-                    <img class="project_img project_img_long" src="img/project1.jpg" alt="project1">
-                    <div class="project_description">
-                        <h3 class="project_title">Project 1: Task Management System</h3>
-                        <p class="project_description">This project is a task management system designed for software development teams. It allows users to create, assign, and track tasks, as well as manage projects and teams. The system provides functionality for commenting on tasks and notifying users of important events.</p>
-                        <ul class="project_list">
-                            <li>Spring Boot: Main framework for creating RESTful services.</li>
-                            <li>Spring Data JPA: For database interaction.</li>
-                            <li>Spring Security: For managing authorization and authentication.</li>
-                            <li>Hibernate: For ORM (Object-Relational Mapping).</li>
-                            <li>MySQL: As the database.</li>
-                            <li>Thymeleaf: For creating the web interface.</li>
-                            <li>Swagger: For API documentation.</li>
-                        </ul>
-                    </div>                    
-                </div>
-                <div class="project">
-                    <img class="project_img project_img_short" src="img/project2.jpg" alt="project2">
-                    <div class="project_description">
-                        <h3 class="project_title">Project 2: E-commerce Platform</h3>
-                        <p class="project_description">This project is an e-commerce platform where users can browse products, add them to their cart, and make purchases. Administrators can manage the product catalog, view orders, and handle inventory. The platform supports multiple payment methods and integration with various shipping services.</p>
-                        <ul class="project_list">
-                            <li>Spring Boot: For API development.</li>
-                            <li>Spring MVC: For building the web interface.</li>
-                            <li>Spring Data JPA: For database interactions.</li>
-                            <li>Spring Security: For user and role management.</li>
-                            <li>H2: Lightweight embedded database for development and testing.</li>
-                            <li>Freemarker: For HTML generation.</li>
-                            <li>RabbitMQ: For managing order and notification queues.</li>
-                            <li>PayPal API: For handling payments.</li>
-                        </ul>
-                    </div>                    
+    <section id="section_projects" class="section section_projects">
+        <h3 class="section_title section_title_projects">Projects</h3>
+        <div class="project_line">
+            <div class="project">
+                <img class="project_img project_img_long" src="img/project1.jpg" alt="project1">
+                <div class="project_description">
+                    <h3 class="project_title">Project 1: Task Management System</h3>
+                    <p class="project_description">This project is a task management system</p>
                 </div>
             </div>
-            <div class="project_line">
-                <div class="project">
-                    <img class="project_img project_img_short" src="img/project3.jpg" alt="project3">
-                    <div class="project_description">
-                        <h3 class="project_title">Project 3: Hotel Booking System</h3>
-                        <p class="project_description">The hotel booking system allows users to search for and book rooms in hotels. Hotel administrators can manage available rooms, prices, and special offers. The platform supports reviews and ratings and integrates with external services for sending confirmations and reminders.</p>
-                        <ul class="project_list">
-                            <li>Spring Boot: For developing the booking service.</li>
-                            <li>Spring Data JPA: For managing booking data.</li>
-                            <li>Spring Security: For user authentication and authorization.</li>
-                            <li>PostgreSQL: As the main database.</li>
-                            <li>Thymeleaf: For rendering pages.</li>
-                            <li>Docker: For containerizing the application.</li>
-                            <li>Twilio API: For sending SMS notifications.</li>
-                        </ul>
-                    </div>                     
-                </div>
-                <div class="project">
-                    <img class="project_img project_img_long" src="img/project4.jpg" alt="project4">
-                    <div class="project_description">
-                        <h3 class="project_title">Project 4: Online Course Platform</h3>
-                        <p class="project_description">This platform allows users to register and take online courses. Instructors can create courses, upload videos, materials, and assignments, and track student progress. The system supports discussion forums and an assignment submission and grading system.</p>
-                        <ul class="project_list">
-                            <li>Spring Boot: For building the core business logic.</li>
-                            <li>Spring Data JPA: For database interactions.</li>
-                            <li>Spring Security: For managing access and roles (students, instructors, administrators).</li>
-                            <li>MongoDB: For storing course materials and student progress data.</li>
-                            <li>Angular: For creating a rich frontend.</li>
-                            <li>WebSocket: For real-time updates and forum discussions.</li>
-                            <li>AWS S3: For storing video materials.</li>
-                        </ul>
-                    </div>
-                    
+            <div class="project">
+                <img class="project_img project_img_short" src="img/project2.jpg" alt="project2">
+                <div class="project_description">
+                    <h3 class="project_title">Project 2: E-commerce Platform</h3>
+                    <p class="project_description">This project is an e-commerce platform</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="section_code" class="section section_code">
-            <h3 class="section_title">My code</h3>
-            <pre class="code">
+        <div class="project_line gallery">
+            <div class="gallery_item">
+                <img src="img/project3.jpg" alt="Project">
+            </div>
+            <div class="gallery_item">
+                <img src="img/project4.jpg" alt="Project">
+            </div>
+            <div class="gallery_item">
+                <img src="img/project1.jpg" alt="Project">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Code Section -->
+    <section id="section_code" class="section section_code">
+        <h3 class="section_title">My code</h3>
+        <pre class="code">
                 <code>
                     def f():
                         print("Hello world!")
                 </code>
             </pre>
-            <pre class="ascii_graphic_ill_be_back">
+        <pre class="ascii_graphic_ill_be_back">
             .___/\.__  .__    ___.            ___.                  __
             |   )/|  | |  |   \_ |__   ____   \_ |__ _____    ____ |  | __
             |   | |  | |  |    | __ \_/ __ \   | __ \\__  \ _/ ___\|  |/ /
@@ -121,27 +82,60 @@
             |___| |____/____/  |___  /\___  >  |___  (____  /\___  >__|_ \
                                    \/     \/       \/     \/     \/     \/
             </pre>
-        </section>
-    </main>
+    </section>
 
-    <footer>
-        <div class="footer_content">
-            <h4 class="contacts_title">Contacts</h4>
-            <ul class="contacts_list">
-                <li>
-                    <a href="mailto:info@example.com">Email</a>
-                </li>
-                <li>
-                    <a href="tel:+2281337">Phone</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/kek" target="_blank">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/gui" target="_blank">Twitter</a>
-                </li>
-            </ul>
+    <!-- Table Section -->
+    <section id="section_table" class="section section_table">
+        <h3 class="section_title">My Table</h3>
+        <div class="table-container">
+            <table>
+                <thead class="table-header">
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Location</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table-row">
+                    <th>Valerii</th>
+                    <th>Backend Developer</th>
+                    <th>Russia</th>
+                </tr>
+                <tr class="table-row">
+                    <th>Anna</th>
+                    <th>Frontend Developer</th>
+                    <th>Germany</th>
+                </tr>
+                <tr class="table-row">
+                    <th>John</th>
+                    <th>Fullstack Developer</th>
+                    <th>USA</th>
+                </tr>
+                </tbody>
+            </table>
         </div>
-    </footer>
+    </section>
+</main>
+
+<footer>
+    <div class="footer_content">
+        <h4 class="contacts_title">Contacts</h4>
+        <ul class="contacts_list">
+            <li>
+                <a href="mailto:info@example.com">Email</a>
+            </li>
+            <li>
+                <a href="tel:+2281337">Phone</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/kek" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/gui" target="_blank">Twitter</a>
+            </li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
