@@ -315,3 +315,63 @@ button:hover {
     background: #fafafa;
     border-radius: 8px;
 }
+
+/*  Comments */
+
+#preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#preloader img {
+    width: auto;
+    margin-right: 10px;
+}
+
+
+#comments {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#comments > div {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+#comments > div:hover {
+    background-color: #f1f1f1;
+}
+
+#comments h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#comments p {
+    margin: 0 0 10px;
+    color: #666;
+    line-height: 1.4;
+}
+
+#comments a {
+    color: #433878;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+#comments a:hover {
+    color: #333;
+}
