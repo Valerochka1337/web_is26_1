@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const commentsUrl = 'https://jsonplaceholder.typicode.com/comments';
     const preloader = document.getElementById('preloader');
@@ -10,9 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const isEvenRequest = Math.random() > 0.5;
     const queryParameter = isEvenRequest ? '?postId=1' : '?postId=2';
 
-
-    async function fetchWithTimeout(url, ms){
-        await new Promise(resolve => setTimeout(resolve, ms))
+    async function fetchWithTimeout(url, ms) {
+        await new Promise(resolve => setTimeout(resolve, ms));
         return await fetch(url);
     }
 
@@ -37,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         comments.forEach(comment => {
             const commentBlock = document.createElement('div');
+            commentBlock.classList.add('comment'); // Add class for styling (optional)
 
             const commentTitle = document.createElement('h3');
             commentTitle.textContent = comment.name;
@@ -52,8 +51,28 @@ document.addEventListener('DOMContentLoaded', () => {
             commentBlock.appendChild(commentBody);
             commentBlock.appendChild(commentEmail);
 
+            // Add event listener to show toast on click
+            commentBlock.addEventListener('click', () => {
+                showToast("Don't click on me")
+            });
+
             commentsDiv.appendChild(commentBlock);
         });
+    }
+
+    function showToast(message) {
+        Toastify({
+            text: message,
+            duration: 2000,
+            close: true,
+            onClick: function () {
+                showToast("I said " + message);
+            },
+            gravity: "top",
+            position: "right",
+            backgroundColor: "#e84256",
+            className: "toastify"
+        }).showToast();
     }
 
     function handleError(error) {
